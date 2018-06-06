@@ -5,9 +5,9 @@ Simula la aprobación de un pago con tarjeta de crédito. Usa la biblioteca Unir
 
 ## Ejemplo
 
-método: POST 
-url: http://localhost:9300/aprobarPago
-body:
+- método: POST 
+- url: http://localhost:9300/aprobarPago
+- body:
 ```
 {
   "monto":999,
