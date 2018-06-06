@@ -1,7 +1,13 @@
-# Forma de uso: ejemplo
 
-POST http://localhost:9300/aprobarPago
+Simula la aprobación de un pago con tarjeta de crédito. Usa la biblioteca Unirest (http://unirest.io/java.html) para mandar requests a PagosMercado (https://github.com/FrutosGaston/PagosMercado).
 
+# Modo de uso
+
+## Ejemplo
+
+método: POST 
+url: http://localhost:9300/aprobarPago
+body:
 ```
 {
   "monto":999,
@@ -11,7 +17,7 @@ POST http://localhost:9300/aprobarPago
 }
 ```
 
-# Ejemplo por terminal
+## Ejemplo por terminal
 
 ```console
 curl --request POST \
