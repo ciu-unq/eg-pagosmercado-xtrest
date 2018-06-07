@@ -42,20 +42,21 @@
 	
 	<br><br>
 
+	<h2>Facturas pagadas</h2>
 	<table class="table table-striped table-hover">
 		<thead>
 			<tr>
-				<th>Id</th>
-				<th>Descripcion</th>
+				<th>Servicio</th>
+				<th>Monto</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr data-ng-repeat="tarea in tareasCtrl.tareas">
+			<tr data-ng-repeat="factura in ctrl.facturas">
 				<td>
-					<a ui-sref="editarTarea({id: tarea.id})">{{tarea.id}}</a>
+					<p>{{factura.servicio}}</p>
 				</td>
 				<td>
-					<a ui-sref="editarTarea({id: tarea.id})">{{tarea.descripcion}}</a>
+					<p>{{factura.pago.amount}}</p>
 				</td>
 			</tr>
 		</tbody>

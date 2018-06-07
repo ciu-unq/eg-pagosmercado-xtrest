@@ -1,6 +1,5 @@
 package xtrest
 
-import domain.DatosPago
 import domain.Factura
 import domain.PagosMercadoClient
 import domain.UserException

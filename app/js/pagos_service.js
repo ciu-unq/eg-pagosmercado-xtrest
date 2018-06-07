@@ -16,6 +16,12 @@ class ApiService {
     this.http = $http
     this.base = "http://localhost:9300/"
   }
+
+  facturas() {
+    return this.http
+    .get(this.base + "facturas")
+    .then((res) => res.data)
+  }
   
   crearPago(factura, token) {
     let uri = this.base + "facturas?token=" + token 
