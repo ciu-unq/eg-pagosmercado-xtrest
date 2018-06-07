@@ -6,5 +6,4 @@ class Factura {
 			name: "APRO"
 		}
 	}
-
 }
