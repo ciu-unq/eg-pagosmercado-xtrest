@@ -53,7 +53,7 @@
 		<tbody>
 			<tr data-ng-repeat="factura in ctrl.facturas">
 				<td>
-					<p>{{factura.servicio}}</p>
+					<p>{{factura.servicio}} <span servicio="factura.servicio"></span></p>
 				</td>
 				<td>
 					<p>{{factura.pago.amount}}</p>
